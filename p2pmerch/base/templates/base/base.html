@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Peak to Peak Merch Store</title>
+    <title>P2P Merch</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/morph/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
 
     <style>
     .ml-auto .dropdown-menu {
@@ -15,105 +15,51 @@
     </style>
 
   </head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Peak to Peak Merch Store</a>
-      {% load static %} <img src="{% static "base\media\P2P logo.png" %}" alt="Peak to Peak Logo" width="10%" height="10%" style="padding-right:20px;" />
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarColor03">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://denver.educationaloutfitters.com/find-my-school/peak-to-peak-charter-school/spirit-wear/">Spirit</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Clubs</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">CSHS</a>
-              <a class="dropdown-item" href="#">SNHS</a>
-              <a class="dropdown-item" href="#">Speech and Debate</a>
-              <a class="dropdown-item" href="#">etc</a>
-            </div>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-             <a class="nav-link" href="#"> 
-              <i class="fas fa-shopping-cart" style="font-size:30px;"></i>
-             </a> 
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=base\login.html>Sign In/Login</a>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        {% load static %} <img src="{% static "base\media\P2P logo.png" %}" alt="Peak to Peak Logo" width="10%" height="10%" style="padding-right:20px;" />
+        <a class="navbar-brand" href="#">P2P Merch</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://denver.educationaloutfitters.com/find-my-school/peak-to-peak-charter-school/spirit-wear/">Spirit</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Clubs</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/cshs">CSHS</a>
+                <a class="dropdown-item" href="#">SNHS</a>
+                <a class="dropdown-item" href="#">Speech and Debate</a>
+                <a class="dropdown-item" href="#">etc</a>
+              </div>
             </li>
           </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> 
+                <i class="fas fa-shopping-cart" style="font-size:30px;"></i>
+              </a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=base\login.html>Sign In/Login</a>
+              </li>
+            </ul>
 
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  {% block pagebody %}
+  {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  <h5 style="text-align:center;padding-top:20px;padding-bottom:20px;">New Releases</h5>
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        {% load static %} <img src="{% static "base\media\merch example.PNG" %}" class="d-block w-100" alt="...">
-      </div> 
-      <div class="carousel-item">
-        {% load static %} <img src="{% static "base\media\merch example.PNG" %}" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        {% load static %} <img src="{% static "base\media\merch example.PNG" %}" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <div class="card mb-3" style="width:45%;left:25px;">
-    <h3 class="card-header">Club Spotlight of the Month</h3>
-    <div class="card-body">
-      <h4 class="card-title" style="padding-right:20px;">"club" Instagram</h4>
-      <i class="fab fa-instagram" style="font-size:30px;float:right;"></i>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
-      <rect width="100%" height="100%" fill="#868e96"></rect>
-      <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-    </svg>
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-</body>
+  </body>
 </html>
