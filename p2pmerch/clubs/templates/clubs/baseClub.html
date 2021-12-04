@@ -1,1 +1,25 @@
 {% extends "base/base.html" %}
+{% load static %}
+
+
+{% block pagebody %}
+
+<div class="card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">CSHS Embroidered Logo: Champion Sweater</div>
+    <div class="card-body">
+      <img src="{% static "clubs\media\cshs_embroidery.png" %}" class="d-block w-100" alt="...">
+    </div>
+</div>
+<div class="card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">CSHS Embroidered Logo 1: Champion Sweater</div>
+    <div class="card-body">
+      <img src="{% static "clubs\media\cshs_embroidery_close.png" %}" class="d-block w-100" alt="...">
+    </div>
+</div>
+<div class="card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">CSHS Embroidered Logo 2: Champion Sweater</div>
+    <div class="card-body">
+      <img src="{% static "clubs\media\cshs_embroidery_body.png" %}" class="d-block w-100" alt="...">
+    </div>
+</div>
+{% endblock %}

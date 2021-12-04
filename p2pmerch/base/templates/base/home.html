@@ -1,5 +1,6 @@
 {% extends "base/base.html" %}
-
+<!--You dont need to load satic after every image, only once at the top of the file - CR -->
+{% load static %}
 
 {% block pagebody %}
     <h5 style="text-align:center;padding-top:20px;padding-bottom:20px;">New Releases</h5>
@@ -12,13 +13,13 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-        {% load static %} <img src="{% static "base\media\merch example.PNG" %}" class="d-block w-100" alt="...">
+            <img src="{% static "clubs\media\cshs_embroidery.PNG" %}" class="d-block w-100" alt="...">
         </div> 
         <div class="carousel-item">
-        {% load static %} <img src="{% static "base\media\merch example.PNG" %}" class="d-block w-100" alt="...">
+            <img src="{% static "clubs\media\cshs_embroidery_close.PNG" %}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-        {% load static %} <img src="{% static "base\media\merch example.PNG" %}" class="d-block w-100" alt="...">
+            <img src="{% static "clubs\media\cshs_embroidery_body.PNG" %}" class="d-block w-100" alt="...">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

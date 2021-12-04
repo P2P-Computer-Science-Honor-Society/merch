@@ -6,6 +6,5 @@ def base(response):
 def home(response):
     return render(response, "base/home.html")
 
-    
 def test(response):
     return render(response, "base/test.html")
