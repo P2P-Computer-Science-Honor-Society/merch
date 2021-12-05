@@ -1,0 +1,17 @@
+.grid-container {
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+  
+.grid-container > div {
+    margin: auto;
+    text-align: center;
+}
+
+.price-tag {
+    width: 20%  
+}
