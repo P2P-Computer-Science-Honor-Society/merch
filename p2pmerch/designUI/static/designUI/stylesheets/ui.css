@@ -1,0 +1,39 @@
+#mockup-container { 
+    margin: auto; 
+    width: 50%; 
+    background-color: antiquewhite;
+}
+
+#mockup-image {
+    height: 100%;
+    width: 100%;
+}
+
+#design-bounds {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    border: 2px dashed black;
+}
+
+
+#image-box {
+    position:absolute;
+    transform:translate(-50%,-50%);
+    height:35px;
+    width:35px;
+}
+
+#image-file {
+    resize: both;
+    overflow: auto;
+    transform:translate(-50%,-50%);
+    border:2px solid green;
+    height: 500px;
+    width: 500px;
+}
+
+#image {
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block pagebody %}
+<link rel="stylesheet" href="{% static "designUI\stylesheets\ui.css" %}">
+<script src="{% static "designUI\scripts\ui.js" %}"></script>
+<div id="mockup-container">
+    <div id="image-box">
+        <div id="image-file">
+            <img src="{% static "clubs\media\cshs_embroidery.png" %}" id="image" alt="...">
+        </div>
+    </div>
+    <div id="design-bounds">
+    </div>
+    <img src="{% static "designUI\media\tshirt.png" %}" id="mockup-image" alt="...">
+</div>
+
+{% endblock %}
