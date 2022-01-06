@@ -1,9 +1,9 @@
-var circle;
+var userImg;
 var clicked = true;
 
 const onMouseMove = (e) =>{
-    circle.style.left = e.pageX + 'px';
-    circle.style.top = e.pageY + 'px';
+    userImg.style.left = e.pageX + 'px';
+    userImg.style.top = e.pageY + 'px';
 }
 
 const onMouseClick = (e) => {
@@ -16,8 +16,20 @@ const onMouseClick = (e) => {
     }
 }
 
+function saveWork() {
+    design = document.getElementById("image")
+    boundingBox = document.getElementById("design-bounds")
+    boundingBoxOffsets = boundingBox.getBoundingClientRect();
+    offsets = design.getBoundingClientRect();
+    console.log(design)
+    console.log(offsets.top-boundingBoxOffsets.top)
+    console.log(offsets.left-boundingBoxOffsets.left)
+    console.log(offsets.width)
+    console.log(offsets.height)
+}
+
 window.addEventListener('load', function () {
-    circle = document.getElementById('image-box');
+    userImg = document.getElementById('image-box');
     document.addEventListener('mousemove', onMouseMove);
-    this.document.addEventListener('click', onMouseClick)
+    userImg.addEventListener('click', onMouseClick);
 })

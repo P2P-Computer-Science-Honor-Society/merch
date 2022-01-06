@@ -122,20 +122,20 @@ payload = {
   "files": [
     {
       "placement": "front",
-      "image_url": "https://www.seekpng.com/png/full/114-1149126_apple-clipart-black-and-white-image-small-clip.png",
+      "image_url": "https://i.ibb.co/r2wqvdc/cshs-embroidery.png",
       "position": {
-        "area_width": 520,
-        "area_height": 202,
-        "width": 1,
-        "height": 1,
-        "top": 77,
-        "left": 43
+        "area_width": 1800,
+        "area_height": 2400,
+        "width": 1800,
+        "height": 2400,
+        "top": 0,
+        "left": 0
       }
     }
   ]
 }
 
-{'printfile_id': 1, 'width': 1800, 'height': 2400, 'dpi': 150, 'fill_mode': 'fit', 'can_rotate': False}
+# {'printfile_id': 1, 'width': 1800, 'height': 2400, 'dpi': 150, 'fill_mode': 'fit', 'can_rotate': False}
 response = printful.create_product_mockup(5, payload)
 print(response)
 print(response.json())
@@ -148,5 +148,10 @@ print(r)
 print(r.json())
 
 # response = printful.get_printfiles(5)
+# print(response)
+# print(response.json())
+
+
+# response = printful.get_printful_product(5)
 # print(response)
 # print(response.json())
