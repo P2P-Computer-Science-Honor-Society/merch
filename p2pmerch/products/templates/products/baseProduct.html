@@ -1,0 +1,88 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+
+
+{% block pagebody %}
+<style>
+    #backdrop {
+        background-color: aqua;
+        height: 80%;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 2%;
+        position: relative;
+    }
+    #imgContainer {
+        background-color: aqua;
+        height: 50%;
+        width: 50%;
+        position: relative;
+    }
+    #productTitle {
+        text-align: center;
+        background-color: bisque;
+        position: absolute;
+        right: 0%;
+        width: 50%;
+        top: 0%;
+    }
+    #price {
+        background-color: bisque;
+        position: absolute;
+        right: 25%;
+        top: 6%;
+    }
+    #imgVariants {
+        background-color: bisque;
+        position: absolute;
+        right: 25%;
+        top: 10%;
+    }
+    .grid-container {
+        margin: auto;
+        display: grid;
+        width: 80%;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    
+    .grid-container > div {
+        margin: auto;
+        text-align: center;
+    }
+
+    .price-tag {
+        width: 20%  
+    }
+</style>
+    <div id="backdrop">
+        <div id="imgContainer">
+            <img src="{% static "clubs\media\cshs_embroidery.png" %}" class="d-block w-100" alt="...">
+        </div>
+        <div id="productTitle">
+            <h1>CSHS Embroidered Shirt</h1>
+        </div>
+        <div id="price">
+            <h3>$100</h3>
+        </div>
+        <div id="imgVariants">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p>YUH</p>
+                </div>
+                <div class="grid-item">
+                    <p>YUH</p>
+                </div>
+                <div class="grid-item">
+                    <p>YUH</p>
+                </div>
+            </div>
+            <p>Image Variants</p>
+        </div>
+        <div id="description">
+            <p>description</p>
+        </div>
+    </div>
+{% endblock %}

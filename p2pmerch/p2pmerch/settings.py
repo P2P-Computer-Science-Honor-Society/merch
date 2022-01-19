@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'clubs.apps.ClubsConfig',
     'designUI.apps.DesignuiConfig',
+    'products.apps.ProductsConfig',
     'crispy_forms',
 ]
 
